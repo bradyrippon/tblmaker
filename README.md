@@ -6,29 +6,31 @@ This macro will use all variables present in the dataset and automatically use a
 
 
 # Installation
-You can import the **_%tblMaker()_** function into your SAS session by running the following code:
+You can import the **_%tblmaker()_** function into your SAS session by running the following code:
 ```r
-filename tblMaker url "https://raw.githubusercontent.com/bradyrippon/tblMaker/refs/heads/main/tblMaker.sas";
-%include tblMaker;
+filename tblmaker url "https://raw.githubusercontent.com/bradyrippon/tblMaker/refs/heads/main/tblmaker.sas";
+%include tblmaker;
 ```
 This will execute the macro directly from this GitHub page. You can alternative download the raw code file and run locally. 
 
 
 # Basic Usage
-**_%tblMaker(_** data = ,
- 	byVar = ,
+**_%tblmaker(_** data = ,
+ 	byvar = ,
   	missingRow = ,
 	statContinuous = ,
 	showTest = **);**
 
 ### Required Inputs
 - **data** = input dataset
-- **byVar** = variable displayed in columns
+- **byvar** = variable displayed in columns
 
 ### Optional Inputs
-- **missingRow** = _(**"Yes"**, "No")_, toggle missing data rows on/off
-- **statContinuous** = _(**"Mean"**_, "Median", "Both"), toggle mean/median for continuous data
-- **showTest** = _("Yes", **"No"**)_, toggle statistical test column on/off
+- **missing_row** = _[ **YES** | NO ]_, toggle missing data rows
+- **ncol** = _[ YES | **NO** ]_, toggle data frequency column
+- **stat_continuous** = _[ **MEAN** | MEDIAN | BOTH ]_, toggle mean/median for continuous data reporting
+- **add_p** = _[ YES | **NO** ]_, toggle p-value column
+- **add_test** = _[ YES | **NO** ]_, toggle statistical test column
 
 
 # Examples
@@ -36,7 +38,7 @@ Please note that the examples below were generated using the _journal_ style wit
 
 ### SASHELP.baseball
 ```r
-%tblMaker(
+%tblmaker(
 	data = SASHELP.baseball(keep = league natbat crruns division nassts),
 	byVar = league
 );
@@ -45,9 +47,9 @@ Please note that the examples below were generated using the _journal_ style wit
 
 ### SASHELP.heart
 ```r
-%tblMaker(
+%tblmaker(
 	data = SASHELP.heart(keep = status sex -- systolic chol_status bp_status),
-	byVar = status
+	byvar = status
 );
 ```
 ![summary table for SASHELP.heart](https://github.com/bradyrippon/tblMaker/blob/main/figures/tbl-heart.png)
