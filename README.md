@@ -15,7 +15,7 @@ This will execute the macro directly from this GitHub page. You can alternative 
 
 
 # Basic Usage
-**_%tblmaker(_** data = , ... **);**
+**_%tblmaker(_** data = , . . .  **);**
 
 ### Required Inputs
 - **data** = input dataset
