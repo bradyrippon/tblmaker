@@ -15,14 +15,14 @@ This will execute the macro directly from this GitHub page. You can alternative 
 
 
 # Basic Usage
-**_%tblmaker(_** data = , ...);**
+**_%tblmaker(_** data = , ... **);**
 
 ### Required Inputs
 - **data** = input dataset
 
 ### Optional Inputs
 - **byvar** = stratifying variable displayed in columns
-- **missing_row** = **[** **YES** | NO **]**, toggle missing data rows
+- **missing_row** = [ **YES** | NO ], toggle missing data rows
 - **ncol** = [ YES | **NO** ], toggle data frequency column
 - **stat_continuous** = [ **MEAN** | MEDIAN | BOTH ], toggle mean/median for continuous data reporting
 - **add_p** = [ YES | **NO** ], toggle p-value column
