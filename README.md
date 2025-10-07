@@ -40,15 +40,6 @@ Please note that the examples below were generated using the _journal_ style wit
 );
 ```
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
-<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
-<title>SAS Output</title>
-<style type="text/css">
-<!--
-.aftercaption
 {
   background-color: #FAFBFE;
   border-spacing: 0px;
