@@ -3,7 +3,7 @@
     "path": "~/Projects/tblmaker/README.md",
     "project_path": "README.md",
     "type": "markdown",
-    "hash": "719045330",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1765579598135.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "50,107",
-        "scrollLine": "22"
+        "cursorPosition": "19,19",
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1765579792,
